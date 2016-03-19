@@ -33,4 +33,4 @@ To get an "exceeds" rating, you can expand on the project in the following ways:
  * Try to think of class names that describe what a certain element represents, and that are not likely to change.
  * For example, the “main-nav” will always remain the main navigation, no matter how much the look of the page changes.
 4. Add additional color or layout styling to the CSS to enhance the portfolio.
- *Think about background and text colors. Just make sure you leave the basic layout the same as the mockup.
+ * Think about background and text colors. Just make sure you leave the basic layout the same as the mockup.
