@@ -1,0 +1,7 @@
+REFACTORING
+
+1. Dividere le relative sezioni in parziali
+2. Estrarre i pattern che si ripetono e creare delle estensioni
+3. Innestare le regole dove possibile (mai oltre il terzo livello)
+4. Creare delle variabili
+5. Convertire le dichiarazioni ripetute in mixin
