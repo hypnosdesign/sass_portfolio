@@ -1,19 +1,28 @@
 * { box-sizing: border-box; }
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: $stack-open-sans;
+	font-size: 18px;
 	@extend %centered-text;
 	background-color: $primary-color;
 	margin-top: 340px;
 	color: $text-color;
+	@include media(narrow) {
+			margin-top: 141px;
+	};
+	@include media(wide) {
+			margin-top: 80px;
+	};
 }
 
 h2 {
 	@extend %uppercase;
-	font-size: 1.2em;
+	font-size: 1.6em;
 	margin: 3em 0 4em;
 }
-
+h3 {
+		font-size: 1.4em;
+}
 h4 {
 	@extend %uppercase;
 }

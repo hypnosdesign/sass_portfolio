@@ -2,4 +2,21 @@
 .secondary {
 	float: none;
 	@extend %centered-text;
+	@include media(narrow) {
+			float: left;
+			text-align: left;
+			width:50%;
+	}
+}
+
+.primary {
+	@include media(narrow) {
+			margin-bottom: 3em;
+	}
+}
+
+.secondary {
+	@include media(narrow) {
+			padding-left: 10%;
+	}
 }

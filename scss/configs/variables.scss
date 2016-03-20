@@ -5,11 +5,24 @@ $light-color        : #EEE;
 $middlegrey-color   : #888;
 
 // font-stack
+$stack-sans-serif    : Helvetica, Arial, sans-serif;
+$stack-open-sans     : 'Open Sans', $stack-sans-serif;
+
+//assets
+$path-font            : '../fonts';
+
+// media queries
+$brake-narrow: 768px;
+$brake-wide: 1024px;
+
+
 /*8) **Create variables for repeating values. At a minimum create variables for
 colors,
 font-sizes and
 font-family values.
 ed un altro o più per gli extra credit
+
+https://teamtreehouse.com/library/modular-css-with-sass/getting-modular-with-mixins-and-functions/the-project-config-file
 ***/
 
 // assets

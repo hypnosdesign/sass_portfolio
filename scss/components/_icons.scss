@@ -13,6 +13,11 @@
 }
 
 .icon-prj {
+  @include media(narrow){
+    position: absolute;
+    top:0px;
+    right:0px;
+  };
 	position: absolute;
 	top: -20px;
 	right: -20px;

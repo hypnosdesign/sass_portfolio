@@ -26,7 +26,6 @@ footer {
 
 }
 
-
 .unghia {
 	@extend %clearfix;
 
@@ -42,8 +41,22 @@ footer {
 	}
 }
 
-
-
 .secondary-nav {
 	display: none;
+	@include media(narrow) {
+		float: right;
+		margin: 1em 0;
+		text-transform: uppercase;
+		font-size: .9em;
+		font-weight: 700;
+		color: #4A4A4A;
+		display: inherit;
+	};
+
+	& li {
+		@include media(narrow) {
+			float: left;
+			margin-left: 2em;
+		}
+	}
 }

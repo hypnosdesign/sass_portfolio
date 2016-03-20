@@ -1693,6 +1693,8 @@ colors,
 font-sizes and
 font-family values.
 ed un altro o più per gli extra credit
+
+https://teamtreehouse.com/library/modular-css-with-sass/getting-modular-with-mixins-and-functions/the-project-config-file
 ***/
 /**************************
 	EXTENDS
@@ -1711,28 +1713,38 @@ h2, h4, .main-nav a, .unghia .btop {
 .wrapper, main.portfolio {
   margin: 0 auto; }
 
-.unghia, .hero, main.portfolio, .contact-wrap {
+.hero, main.portfolio, .contact-wrap, .unghia {
   /*
   micro clearfix by Nicolas Gallagher
   http://nicolasgallagher.com/micro-clearfix-hack/ */ }
-  .unghia:before, .hero:before, main.portfolio:before, .contact-wrap:before, .unghia:after, .hero:after, main.portfolio:after, .contact-wrap:after {
+  .hero:before, main.portfolio:before, .contact-wrap:before, .unghia:before, .hero:after, main.portfolio:after, .contact-wrap:after, .unghia:after {
     content: " ";
     display: table; }
-  .unghia:after, .hero:after, main.portfolio:after, .contact-wrap:after {
+  .hero:after, main.portfolio:after, .contact-wrap:after, .unghia:after {
     clear: both; }
 
 * {
   box-sizing: border-box; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 18px;
   background-color: #FAFAFA;
   margin-top: 340px;
   color: #4A4A4A; }
+  @media (min-width: 768px) {
+    body {
+      margin-top: 141px; } }
+  @media (min-width: 1024px) {
+    body {
+      margin-top: 80px; } }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.6em;
   margin: 3em 0 4em; }
+
+h3 {
+  font-size: 1.4em; }
 
 a {
   text-decoration: none;
@@ -1767,17 +1779,107 @@ header {
   font-weight: 700;
   margin: 0;
   padding: 0; }
+  @media (min-width: 1024px) {
+    .main-title {
+      float: left; } }
 .main-nav {
   display: block;
   margin: 2em 0;
   padding: 6%; }
+  @media (min-width: 768px) {
+    .main-nav {
+      margin: 0;
+      padding: 1em 0; } }
+  @media (min-width: 1024px) {
+    .main-nav {
+      float: right; } }
   .main-nav li {
     margin: 4px; }
+    @media (min-width: 768px) {
+      .main-nav li {
+        display: inline-block; } }
+    @media (min-width: 1024px) {
+      .main-nav li {
+        float: left; } }
   .main-nav a {
     padding: 8px;
     background-color: #FFF;
     font-size: 1.1em;
     font-weight: 700; }
+    @media (min-width: 768px) {
+      .main-nav a {
+        background-color: transparent; } }
+
+@media (min-width: 1024px) {
+  .main-title, .main-nav {
+    margin: 0;
+    padding: 0; } }
+
+article {
+  margin-bottom: 3.5em;
+  position: relative;
+  float: left;
+  width: 50%;
+  padding: .8em; }
+  @media (min-width: 1024px) {
+    article {
+      float: left;
+      width: 33%;
+      padding: .8em; } }
+
+/**************************
+	HERO
+---------------------------
+***************************/
+.hero {
+  padding: 0 6% 2em; }
+  @media (min-width: 768px) {
+    .hero {
+      padding: 4em 6%; } }
+
+.img-profile {
+  width: 200px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px; }
+  @media (min-width: 768px) {
+    .img-profile {
+      float: right;
+      width: 300px;
+      margin-left: 30px; } }
+  @media (min-width: 1024px) {
+    .img-profile {
+      width: 40%;
+      margin: 0.5em 1em 0.5em 0.5em; } }
+
+main.portfolio {
+  background-color: #FFF;
+  padding: 2em 6%;
+  max-width: 90%;
+  padding: 1em 1em 3em; }
+
+.contact-wrap {
+  padding: 1em 6%;
+  background-color: #fff; }
+
+.primary,
+.secondary {
+  float: none; }
+  @media (min-width: 768px) {
+    .primary,
+    .secondary {
+      float: left;
+      text-align: left;
+      width: 50%; } }
+
+@media (min-width: 768px) {
+  .primary {
+    margin-bottom: 3em; } }
+
+@media (min-width: 768px) {
+  .secondary {
+    padding-left: 10%; } }
 
 /**************************
 	FOOTER
@@ -1807,60 +1909,38 @@ footer {
 
 .secondary-nav {
   display: none; }
-
-article {
-  margin-bottom: 3.5em;
-  position: relative;
-  float: left;
-  width: 50%;
-  padding: .8em; }
-
-/**************************
-	HERO
----------------------------
-***************************/
-.hero {
-  padding: 0 6% 2em; }
-
-.img-profile {
-  width: 200px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  border-radius: 15px; }
-
-main.portfolio {
-  background-color: #FFF;
-  padding: 2em 6%;
-  max-width: 90%;
-  padding: 1em 1em 3em; }
-
-.contact-wrap {
-  padding: 1em 6%;
-  background-color: #fff; }
-
-.primary,
-.secondary {
-  float: none; }
+  @media (min-width: 768px) {
+    .secondary-nav {
+      float: right;
+      margin: 1em 0;
+      text-transform: uppercase;
+      font-size: .9em;
+      font-weight: 700;
+      color: #4A4A4A;
+      display: inherit; } }
+  @media (min-width: 768px) {
+    .secondary-nav li {
+      float: left;
+      margin-left: 2em; } }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 300;
   font-style: normal;
   src: url("../fonts/Open-Sans-300/Open-Sans-300.eot");
-  src: url("../fonts/Open-Sans-300/Open-Sans-300.eot?#iefix") format("embedded-opentype"), local("Open Sans Light"), local("Open-Sans-300"), url("../fonts/Open-Sans-300/Open-Sans-300.woff2") format("woff2"), url("../fonts/Open-Sans-300/Open-Sans-300.woff") format("woff"), url("../fonts/Open-Sans-300/Open-Sans-300.ttf") format("truetype"), url("../fonts/Open-Sans-300/Open-Sans-300.svg#OpenSans") format("svg"); }
+  src: url("../fonts/Open-Sans-300/Open-Sans-300.eot?#iefix") format("embedded-opentype"), url("../fonts/Open-Sans-300/Open-Sans-300.woff2") format("woff2"), url("../fonts/Open-Sans-300/Open-Sans-300.woff") format("woff"), url("../fonts/Open-Sans-300/Open-Sans-300.ttf") format("truetype"), url("../fonts/Open-Sans-300/Open-Sans-300.svg#OpenSans") format("svg"); }
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 400;
   font-style: normal;
   src: url("../fonts/Open-Sans-regular/Open-Sans-regular.eot");
-  src: url("../fonts/Open-Sans-regular/Open-Sans-regular.eot?#iefix") format("embedded-opentype"), local("Open Sans"), local("Open-Sans-regular"), url("../fonts/Open-Sans-regular/Open-Sans-regular.woff2") format("woff2"), url("../fonts/Open-Sans-regular/Open-Sans-regular.woff") format("woff"), url("../fonts/Open-Sans-regular/Open-Sans-regular.ttf") format("truetype"), url("../fonts/Open-Sans-regular/Open-Sans-regular.svg#OpenSans") format("svg"); }
+  src: url("../fonts/Open-Sans-regular/Open-Sans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Open-Sans-regular/Open-Sans-regular.woff2") format("woff2"), url("../fonts/Open-Sans-regular/Open-Sans-regular.woff") format("woff"), url("../fonts/Open-Sans-regular/Open-Sans-regular.ttf") format("truetype"), url("../fonts/Open-Sans-regular/Open-Sans-regular.svg#OpenSans") format("svg"); }
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 700;
   font-style: normal;
   src: url("../fonts/Open-Sans-700/Open-Sans-700.eot");
-  src: url("../fonts/Open-Sans-700/Open-Sans-700.eot?#iefix") format("embedded-opentype"), local("Open Sans Bold"), local("Open-Sans-700"), url("../fonts/Open-Sans-700/Open-Sans-700.woff2") format("woff2"), url("../fonts/Open-Sans-700/Open-Sans-700.woff") format("woff"), url("../fonts/Open-Sans-700/Open-Sans-700.ttf") format("truetype"), url("../fonts/Open-Sans-700/Open-Sans-700.svg#OpenSans") format("svg"); }
+  src: url("../fonts/Open-Sans-700/Open-Sans-700.eot?#iefix") format("embedded-opentype"), url("../fonts/Open-Sans-700/Open-Sans-700.woff2") format("woff2"), url("../fonts/Open-Sans-700/Open-Sans-700.woff") format("woff"), url("../fonts/Open-Sans-700/Open-Sans-700.ttf") format("truetype"), url("../fonts/Open-Sans-700/Open-Sans-700.svg#OpenSans") format("svg"); }
 article p {
   font-size: .9em; }
 
@@ -1869,7 +1949,16 @@ article p {
   font-size: 1.1em;
   line-height: 1.6em;
   margin-top: 2em; }
+  @media (min-width: 768px) {
+    .hero p {
+      text-align: left; } }
+  @media (min-width: 1024px) {
+    .hero p {
+      font-size: 1.2em; } }
 
+@media (min-width: 768px) {
+  .btop {
+    display: none; } }
 .contact li a {
   min-height: 30px;
   background-repeat: no-repeat;
@@ -1892,101 +1981,8 @@ article p {
   z-index: 500;
   border-radius: 0 0 0 25%;
   background-color: #fff; }
-
-/**************************
-	MEDIA QUERIES
----------------------------
-***************************/
-@media (min-width: 768px) {
-  /*	test. */
-  /*	body { background-color: #ddd; } */
-  body {
-    margin-top: 141px; }
-
-  .hero {
-    padding: 4em 6%; }
-
-  .hero p {
-    text-align: left; }
-
-  .img-profile {
-    float: right;
-    width: 300px;
-    margin-left: 30px; }
-
-  .main-nav {
-    margin: 0;
-    padding: 1em 0; }
-
-  .main-nav li {
-    display: inline-block; }
-
-  .main-nav li a {
-    background-color: transparent; }
-
-  .icon-prj {
-    position: absolute;
-    top: 0px;
-    right: 0px; }
-
-  .primary {
-    margin-bottom: 3em;
-    float: left; }
-
-  .secondary {
-    float: left;
-    padding-left: 10%; }
-
-  .col {
-    text-align: left;
-    width: 50%; }
-
-  /**************************
-  FOOTER
-  ---------------------------
-  ***************************/
-  .btop {
-    display: none; }
-
-  .secondary-nav {
-    float: right;
-    margin: 1em 0;
-    text-transform: uppercase;
-    font-size: .9em;
-    font-weight: 700;
-    color: #4A4A4A;
-    display: inherit; }
-
-  .secondary-nav li {
-    float: left;
-    margin-left: 2em; } }
-@media (min-width: 1024px) {
-  /*	test. */
-  /*	body { background-color: #888; } */
-  body {
-    margin-top: 80px; }
-
-  .main-title, .main-nav {
-    margin: 0;
-    padding: 0; }
-
-  .main-title {
-    float: left; }
-
-  .main-nav {
-    float: right; }
-
-  .main-nav li {
-    float: left; }
-
-  .hero p {
-    font-size: 1.2em; }
-
-  .img-profile {
-    width: 40%;
-    margin: 0.5em 1em 0.5em 0.5em; }
-
-  article {
-    float: left;
-    width: 33%;
-    padding: .8em; } }
+  @media (min-width: 768px) {
+    .icon-prj {
+      position: absolute;
+      top: 0px;
+      right: 0px; } }

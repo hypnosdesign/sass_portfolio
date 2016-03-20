@@ -19,6 +19,9 @@ header {
 		font-weight: 700;
 		margin: 0;
 		padding:0;
+		@include media(wide) {
+				float: left;
+		}
 	}
 
 	//NAVIGATION
@@ -26,15 +29,40 @@ header {
 		display: block;
 		margin: 2em 0;
 		padding: 6%;
+		@include media(narrow) {
+			margin: 0;
+			padding: 1em 0;
+		};
+		@include media(wide) {
+			float: right;
+		};
 
 		& li {
-			margin: 4px; }
+			@include media(narrow) {
+				display: inline-block;
+			};
+			@include media(wide){
+				float: left;
+			}
+			margin: 4px;
+		}
 
 		& a{
+			@include media(narrow) {
+				background-color: transparent;
+			};
 			padding: 8px;
 			background-color: #FFF;
 			@extend %uppercase;
 			font-size: 1.1em;
-			font-weight: 700; }
+			font-weight: 700;
+		}
+	}
+}
+
+.main-title, .main-nav {
+	@include media(wide){
+	margin: 0;
+	padding: 0;
 	}
 }

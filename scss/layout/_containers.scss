@@ -10,6 +10,12 @@ article {
   float: left;
   width: 50%;
   padding: .8em;
+
+	@include media(wide){
+		float: left;
+		width: 33%;
+		padding: .8em;
+	};
 }
 
 /**************************
@@ -20,11 +26,23 @@ article {
 .hero {
   @extend %clearfix;
 	padding: 0 6% 2em;
+	@include media(narrow) {
+			padding: 4em 6%;
+		};
 }
 
 .img-profile {
 	width: 200px;
   @include border-radius(15px);
+	@include media(narrow) {
+		float: right;
+		width: 300px;
+		margin-left: 30px;
+	};
+	@include media(wide) {
+		width: 40%;
+		margin: 0.5em 1em 0.5em 0.5em;
+	};
 }
 
 
