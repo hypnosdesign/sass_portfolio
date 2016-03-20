@@ -14,40 +14,40 @@ To complete this project, follow the instructions below. If you get stuck, ask a
 
 ####**13 STEPS**
 
-1) **Create a 'scss' folder in your "Responsive Layout" project.**
+[x] 1) **Create a 'scss' folder in your "Responsive Layout" project.**
 
 ***
-2) **Convert the CSS stylesheet to an SCSS stylesheet, then place it inside the 'scss' folder.**
+[x] 2) **Convert the CSS stylesheet to an SCSS stylesheet, then place it inside the 'scss' folder.**
 
 ***
-3) **Run Sass from the console or with a tool like CodeKit, Workspaces, or any of these.**
+[x] 3) **Run Sass from the console or with a tool like CodeKit, Workspaces, or any of these.**
 
 ***
-4) **In the 'scss' folder, create subfolders to organize your CSS code into Sass partial files.**
+[x] 4) **In the 'scss' folder, create subfolders to organize your CSS code into Sass partial files.**
   - For example for base styles, layout, components, and so on.
   - Create at least three folders.
 
 ***
-5) **Group related sections of CSS into SCSS partials.**
+[x] 5) **Group related sections of CSS into SCSS partials.**
   - For example, base styles for elements can go inside a \_base.scss partial inside the 'base' folder.
   - Create at least 3 Sass partial files.
 
 ***
-6) **Import your partials into your project's main SCSS file.**
+[x] 6) **Import your partials into your project's main SCSS file.**
   - When using multiple @import’s make sure they are listed in the correct order for styling.
 
 ***
-7) **Find repeating patterns in the stylesheet and extract them into placeholder selectors, then extend them wherever necessary.**
+[x] 7) **Find repeating patterns in the stylesheet and extract them into placeholder selectors, then extend them wherever necessary.**
   - At a minimum create at least one placeholder selector, and use it with the \@extend keyword in at least 3 other selectors.
 
 ***
-8) **Create variables for repeating values. At a minimum create variables for colors, font-sizes and font-family values.**
+[x] 8) **Create variables for repeating values. At a minimum create variables for colors, font-sizes and font-family values.**
 
 ***
-9) **Write mixins for media queries.**
+[x] 9) **Write mixins for media queries.**
 
 ***
-10) **Create at least one example of a nested Sass rule.**
+[x] 10) **Create at least one example of a nested Sass rule.**
 For example:
 ```css
 nav {
@@ -66,7 +66,7 @@ a {
 ```
 
 ***
-11) **No nested rules greater than 3 levels deep.**
+[x] 11) **No nested rules greater than 3 levels deep.**
 For example:
 ```css
 .weather {
@@ -78,7 +78,7 @@ For example:
 }
 ```
 ***
-12) **You don’t need to make any changes to your original design, but make sure the site is still responsive and works well on different screen sizes.**
+[x] 12) **You don’t need to make any changes to your original design, but make sure the site is still responsive and works well on different screen sizes.**
 ***
 13) **Make sure to check your code is valid by running it through an HTML and CSS validator.**
 - Links to the validators can be found in the Project Resources. This will help you spot any errors that might be in your code.
@@ -92,25 +92,25 @@ To get an "exceeds" rating, you can expand on the project in the following ways:
 
 ####**8 STEPS**
 
-1) **Create multiple subfolders (more than 3) for organizing styles.**
+[x] 1) **Create multiple subfolders (more than 3) for organizing styles.**
 
 ***
-2) **Create multiple SCSS partial files (more than 3).**
+[x] 2) **Create multiple SCSS partial files (more than 3).**
 
 ***
-3) **Multiple (more than 1)placeholder selectors**
+[x] 3) **Multiple (more than 1)placeholder selectors**
 
 ***
-4) **Multiple (more than 3) uses of @extends with placeholders**
+[x] 4) **Multiple (more than 3) uses of @extends with placeholders**
 
 ***
-5) **Multiple (more than 1) additional Sass variables (not just color, font-size, font-family).**
+[x] 5) **Multiple (more than 1) additional Sass variables (not just color, font-size, font-family).**
 
 ***
-6) **Include at least 1 additional mixin for other code (not just for media queries)**
+[x] 6) **Include at least 1 additional mixin for other code (not just for media queries)**
 
 ***
-7) **Create more than 3 nested Sass rules where appropriate.**
+[x] 7) **Create more than 3 nested Sass rules where appropriate.**
 
 ***
 8) **Using JavaScript or CSS/Sass, include an icon that, when clicked toggles the navigation on and off when on mobile screen sizes.**
