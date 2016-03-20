@@ -10,5 +10,5 @@ article p {
 }
 
 .up {
-	text-transform: uppercase;
+	@extend %uppercase;
 }

@@ -1,8 +1,9 @@
 @import 'plugins/index';
+@import 'configs/index';
 @import 'base/index';
 @import 'layout/index';
 @import 'components/index';
-@import 'helpers/index';
+
 
 
 /**************************
@@ -52,7 +53,23 @@
 		right:0px;
 	}
 
+	.primary {
+		margin-bottom: 3em;
 
+	  float: left;
+	}
+
+	.secondary {
+
+	  float: left;
+	  padding-left: 10%
+	}
+
+
+	.col {
+		text-align: left;
+		width: 50%;
+	}
 
 
 

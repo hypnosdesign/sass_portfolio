@@ -1,3 +1,13 @@
+header {
+		width: 100%;
+		background-color: $primary-color;
+		margin-top: 0;
+		padding: 1em 6% 0;
+		position: fixed;
+		top: 0;
+		z-index: 999;
+}
+
 /**************************
 	HEADING
 ---------------------------
@@ -28,7 +38,7 @@
 .main-nav a{
 	padding: 8px;
 	background-color: #FFF;
-	text-transform: uppercase;
+	@extend %uppercase;
 	font-size: 1.1em;
 	font-weight: 700;
 }

@@ -1,46 +1,15 @@
-/**************************
-	GENERAL
----------------------------
-***************************/
-
-/* colors **********
-body #FAFAFA
-text #4A4A4A
-********************/
-
-
-/*TEST*/ /** { border: 1px solid red; }	*/
-
-* {
-
-	box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	text-align: center;
-	background-color: #FAFAFA;
+	@extend %centered-text;
+	background-color: $primary-color;
 	margin-top: 340px;
-	color: #4A4A4A;
-}
-
-.wrapper {
-	max-width: 100%;
-	margin: 0 auto;
-}
-
-header {
-		width: 100%;
-		background-color: #FAFAFA;
-		margin-top: 0;
-		padding: 1em 6% 0;
-		position: fixed;
-		top: 0;
-		z-index: 999;
+	color: $text-color;
 }
 
 h2 {
-	text-transform: uppercase;
+	@extend %uppercase;
 	font-size: 1.2em;
 	margin: 3em 0 4em;
 }
@@ -52,43 +21,19 @@ img {
 a {
 	text-decoration: none;
 	display: block;
-	color: #4A4A4A;
+	color: $text-color;
+
+		&:hover {
+			color: $middlegrey-color;
+		}
 }
 
 hr {
 	border: 0;
 	height: 0;
-	border-top: 1px solid #EEE;
+	border-top: 1px solid $light-color;
 }
 
-.selected, a:hover {
-	color: #888;
-}
-
-/**************************
-	MAIN
----------------------------
-***************************/
-
-main.portfolio {
-	background-color: #FFF;
-	padding: 2em 6%;
-}
-
-article {
-	margin-bottom: 3.5em;
-	position: relative;
-}
-
-/**************************
-	HERO
----------------------------
-***************************/
-
-.hero {
-	padding: 0 6% 2em;
-}
-
-.img-profile {
-	width: 200px;
+.selected {
+	color: $middlegrey-color;
 }

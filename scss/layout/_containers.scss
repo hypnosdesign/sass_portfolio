@@ -1,10 +1,44 @@
+
+.wrapper {
+	max-width: 100%;
+	@extend %centered-container;
+}
+
+article {
+	margin-bottom: 3.5em;
+	position: relative;
+  float: left;
+  width: 50%;
+  padding: .8em;
+}
+
+/**************************
+	HERO
+---------------------------
+***************************/
+
+.hero {
+  @extend %clearfix;
+	padding: 0 6% 2em;
+}
+
+.img-profile {
+	width: 200px;
+  @include border-radius(15px);
+}
+
+
 main.portfolio {
+  @extend %clearfix;
+  background-color: #FFF;
+  padding: 2em 6%;
   max-width: 90%;
-  margin: 0 auto;
+  @extend %centered-container;
   padding: 1em 1em 3em;
 }
 
 .contact-wrap {
+  @extend %clearfix;
 	padding: 1em 6%;
 	background-color: #fff;
 }

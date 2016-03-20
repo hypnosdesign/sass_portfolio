@@ -37,10 +37,15 @@ plugins:
 
 NOTE
 
-CSS REFACTORING
+REFACTORING
 
-1. Dividere le relative sezioni in parziali
-2. Estrarre i pattern che si ripetono e creare delle estensioni
-3. Innestare le regole dove possibile (mai oltre il terzo livello)
-4. Creare delle variabili
-5. Convertire le dichiarazioni ripetute in mixin
+1.  Dividere il foglio di stile in parziali
+    Breaking the Style Sheet into Partials
+2.  Estrarre i pattern che si ripetono e creare delle estensioni
+    Extract repeating patterns into extends or placeholders
+3.  Innestare le regole dove possibile (mai oltre il terzo livello)
+    Nest rules where it makes sense
+4.  Creare delle variabili per i valori che si ripetono
+    Create variables for repetitive values
+5.  Convertire le dichiarazioni ripetute in mixin
+    Convert repeating declation groups into mixin

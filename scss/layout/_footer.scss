@@ -25,6 +25,10 @@ footer {
 	display: inline-block;
 }
 
+.unghia {
+	@extend %clearfix;
+}
+
 .unghia p {
 	float: left;
 	font-weight: 700;
