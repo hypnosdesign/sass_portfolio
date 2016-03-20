@@ -1,0 +1,44 @@
+/**************************
+	FOOTER
+---------------------------
+***************************/
+
+footer {
+	padding: 1.6em 6%;
+}
+
+.contact {
+	margin: 2em 0;
+	font-size: 1.2em;
+
+}
+.contact li {
+	margin: .8em 0;
+}
+
+.contact a {
+	display: inline-block;
+	font-weight: 700;
+	padding-left: 12px;
+}
+.contact span{
+	display: inline-block;
+}
+
+.unghia {
+	@extend %clearfix;
+}
+
+.unghia p {
+	float: left;
+	font-weight: 700;
+}
+
+.unghia .btop {
+	float: right;
+	font-size: 0.9em;
+}
+
+.secondary-nav {
+	display: none;
+}

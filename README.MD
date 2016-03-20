@@ -1,36 +1,116 @@
-#Project Instructions
+#Instructions
+
+In this project you will convert a CSS stylesheet to Sass. You'll refactor the stylesheet from the "Responsive Layout" project using SCSS partials, variables, extends, and mixins.
+***
+**NOTE:** To get an "Exceeds Expectations" grade for this project, you'll need to "exceed" on every requirement that has an "Exceeds Expectations" option.
+***
+**NOTE:** The Front End Web Development Techdegree is meant to train you in HTML, CSS and JavaScript, and let you practice and show your mastery of these fundamental building blocks of the web. Because of that, please avoid using frameworks like Bootstrap, Foundation, Skeleton, and so on for this project. Even though you may end up using frameworks like these professionally, you still need to know and be able to implement designs with your own knowledge of HTML, CSS and JavaScript.
+***
+In addition, please avoid submitting any projects that rely on a server-side technology like PHP or Ruby on Rails.
+
+##Project Instructions
 
 To complete this project, follow the instructions below. If you get stuck, ask a question in the community.
 
-###10 steps
+####**13 STEPS**
 
-1. Create index.html and styles.css files.
-2. Link the styles.css file to the index.html file.
-3. Look at the provided mockups and add the same header, titles, content and footer information into your index.html file.
-4. Use appropriate HTML markup for each piece of content.
-5. Use the images provided for the portfolio images.
-6. Provide an image for your about picture to reflect the placement and sizing in the mockup.
-7. Use CSS to style your portfolio to look like the ones in the mockup.
-8. Add media queries to create a responsive style that matches the three breakpoints (mobile, tablet, desktop) and styles provided in the mockups.
-9. Put your project in a new GitHub repository on your GitHub account:
- * See the Workshop 'Share Your Projects With GitHub Desktop' in the Project Resources. The GitHub Desktop application can automatically create a new repository for you.
- * Make sure that you're only putting the files for this project in that repository.
-10. Make sure to check your code is valid by running it through an HTML and CSS validator.
- * Links to the validators can be found in the Project Resources. This will help you spot any errors that might be in your code.
- * There are a few exceptions that you don’t need to fix:
-  * Don’t worry about any warnings, we just need you to check any errors that might be there.
-  * If CSS validator flags use of calc, or vendor prefixes these errors should be ignored.
-  * If HTML validator flags use of pipe (‘|’) in Google font links/URLs this error can also be ignored.
+1) **Create a 'scss' folder in your "Responsive Layout" project.**
 
-#Extra Credit
+***
+2) **Convert the CSS stylesheet to an SCSS stylesheet, then place it inside the 'scss' folder.**
 
+***
+3) **Run Sass from the console or with a tool like CodeKit, Workspaces, or any of these.**
+
+***
+4) **In the 'scss' folder, create subfolders to organize your CSS code into Sass partial files.**
+  - For example for base styles, layout, components, and so on.
+  - Create at least three folders.
+
+***
+5) **Group related sections of CSS into SCSS partials.**
+  - For example, base styles for elements can go inside a \_base.scss partial inside the 'base' folder.
+  - Create at least 3 Sass partial files.
+
+***
+6) **Import your partials into your project's main SCSS file.**
+  - When using multiple @import’s make sure they are listed in the correct order for styling.
+
+***
+7) **Find repeating patterns in the stylesheet and extract them into placeholder selectors, then extend them wherever necessary.**
+  - At a minimum create at least one placeholder selector, and use it with the \@extend keyword in at least 3 other selectors.
+
+***
+8) **Create variables for repeating values. At a minimum create variables for colors, font-sizes and font-family values.**
+
+***
+9) **Write mixins for media queries.**
+
+***
+10) **Create at least one example of a nested Sass rule.**
+For example:
+```css
+nav {
+    ul {
+        margin: 0;
+       padding: 0;
+        list-style: none;
+    }
+li { display: inline-block; }
+a {
+   display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+   }
+}
+```
+
+***
+11) **No nested rules greater than 3 levels deep.**
+For example:
+```css
+.weather {
+    .cities {
+        li {
+             // no more!
+        }
+    }
+}
+```
+***
+12) **You don’t need to make any changes to your original design, but make sure the site is still responsive and works well on different screen sizes.**
+***
+13) **Make sure to check your code is valid by running it through an HTML and CSS validator.**
+- Links to the validators can be found in the Project Resources. This will help you spot any errors that might be in your code.
+- **There are a few exceptions that you don’t need to fix:**
+  - Don’t worry about any warnings, we just need you to check any errors that might be there.
+  - If CSS validator flags use of calc, or vendor prefixes these errors should be ignored.
+  - If HTML validator flags use of pipe (‘|’) in Google font links/URLs this error can also be ignored.
+
+##Extra Credit
 To get an "exceeds" rating, you can expand on the project in the following ways:
 
-###4 steps
-1. Add folders to organize different files types like images, and stylesheets.
-2. Add additional relevant content such as extra images, information or even extra pages.
-3. Provide semantic classes where appropriate, like <nav> for a navigation bar.
- * Try to think of class names that describe what a certain element represents, and that are not likely to change.
- * For example, the “main-nav” will always remain the main navigation, no matter how much the look of the page changes.
-4. Add additional color or layout styling to the CSS to enhance the portfolio.
- * Think about background and text colors. Just make sure you leave the basic layout the same as the mockup.
+####**8 STEPS**
+
+1) **Create multiple subfolders (more than 3) for organizing styles.**
+
+***
+2) **Create multiple SCSS partial files (more than 3).**
+
+***
+3) **Multiple (more than 1)placeholder selectors**
+
+***
+4) **Multiple (more than 3) uses of @extends with placeholders**
+
+***
+5) **Multiple (more than 1) additional Sass variables (not just color, font-size, font-family).**
+
+***
+6) **Include at least 1 additional mixin for other code (not just for media queries)**
+
+***
+7) **Create more than 3 nested Sass rules where appropriate.**
+
+***
+8) **Using JavaScript or CSS/Sass, include an icon that, when clicked toggles the navigation on and off when on mobile screen sizes.**

@@ -1,3 +1,7 @@
 
 *.scssc
+<<<<<<< HEAD
 *.codekit
+=======
+*config.codekit
+>>>>>>> splitting_sass

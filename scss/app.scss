@@ -1,1 +1,146 @@
-@import 'main';
+@import 'plugins/index';
+@import 'configs/index';
+@import 'base/index';
+@import 'layout/index';
+@import 'components/index';
+
+
+
+/**************************
+	MEDIA QUERIES
+---------------------------
+***************************/
+
+
+@media (min-width: 768px){
+
+	/*	test. */ /*	body { background-color: #ddd; } */
+
+	body {
+		margin-top: 141px;
+	}
+
+	.hero {
+		padding: 4em 6%;
+	}
+
+	.hero p {
+		text-align: left;
+	}
+
+	.img-profile {
+		float: right;
+		width: 300px;
+		margin-left: 30px;
+	}
+
+	.main-nav {
+		margin: 0;
+		padding: 1em 0;
+	}
+
+	.main-nav li {
+		display: inline-block;
+	}
+
+	.main-nav li a {
+		background-color: transparent;
+	}
+
+	.icon-prj {
+		position: absolute;
+		top:0px;
+		right:0px;
+	}
+
+	.primary {
+		margin-bottom: 3em;
+
+	  float: left;
+	}
+
+	.secondary {
+
+	  float: left;
+	  padding-left: 10%
+	}
+
+
+	.col {
+		text-align: left;
+		width: 50%;
+	}
+
+
+
+
+
+
+
+
+	/**************************
+	FOOTER
+	---------------------------
+	***************************/
+
+	.btop {
+		display: none;
+	}
+
+	.secondary-nav {
+		float: right;
+		margin: 1em 0;
+		text-transform: uppercase;
+		font-size: .9em;
+		font-weight: 700;
+		color: #4A4A4A;
+		display: inherit;
+	}
+
+	.secondary-nav li {
+		float: left;
+		margin-left: 2em;
+	}
+
+}
+
+
+@media (min-width: 1024px){
+
+	/*	test. */ /*	body { background-color: #888; } */
+
+	body { margin-top: 80px; }
+
+	.main-title, .main-nav {
+		margin: 0;
+		padding: 0;
+	}
+
+	.main-title {
+		float: left;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.main-nav li {
+		float: left;
+	}
+
+	.hero p {
+		font-size: 1.2em;
+	}
+
+	.img-profile {
+		width: 40%;
+		margin: 0.5em 1em 0.5em 0.5em;
+	}
+
+	article {
+		float: left;
+		width: 33%;
+		padding: .8em;
+	}
+
+}

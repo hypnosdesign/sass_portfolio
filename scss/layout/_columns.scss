@@ -1,0 +1,5 @@
+.primary,
+.secondary {
+	float: none;
+	@extend %centered-text;
+}

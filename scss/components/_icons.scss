@@ -1,0 +1,32 @@
+.contact li a {
+  min-height: 30px;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  padding: 0 0 0 40px;
+  margin: 0 0 10px;
+}
+
+.contact li.phone a {
+  background-image: url(../icons/phone.png);
+}
+
+.contact li.mail a {
+  background-image: url(../icons/message.png);
+}
+
+.contact li.twitter a {
+  background-image: url(../icons/twitter.png);
+}
+
+.contact li.facebook a {
+  background-image: url(../icons/facebook.png);
+}
+
+.icon-prj {
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	z-index: 500;
+	border-radius: 0 0 0 25%;
+	background-color: #fff;
+}
