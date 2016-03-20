@@ -5,7 +5,7 @@ Mattia Piano
 
 
 TECHNOLOGY
-Html5, Css, Sass, JavaScript, jQuery
+Html5, Css, Sass, JavaScript, jQuery, CodeKit
 
 
 
