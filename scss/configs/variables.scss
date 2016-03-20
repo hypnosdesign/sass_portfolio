@@ -5,15 +5,25 @@ $light-color        : #EEE;
 $middlegrey-color   : #888;
 
 // font-stack
-$stack-sans-serif    : Helvetica, Arial, sans-serif;
-$stack-open-sans     : 'Open Sans', $stack-sans-serif;
+$stack-sans-serif   : Helvetica, Arial, sans-serif;
+$stack-open-sans    : 'Open Sans', $stack-sans-serif;
+
+// font-sizes
+$font-base-size     : 16px;
+$font-title-size    : 2em;
+$font-hero-size     : 1.2em;
+$font-subtitle-size : 1.3em;
+$font-medium-size   : 1.5em;
+$font-small-size    : 0.9em;
+
+
 
 //assets
-$path-font            : '../fonts';
+$path-font          : '../fonts';
 
 // media queries
-$brake-narrow: 768px;
-$brake-wide: 1024px;
+$brake-narrow       : 768px;
+$brake-wide         : 1024px;
 
 
 /*8) **Create variables for repeating values. At a minimum create variables for

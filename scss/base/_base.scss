@@ -2,7 +2,7 @@
 
 body {
 	font-family: $stack-open-sans;
-	font-size: 18px;
+	font-size: $font-base-size;
 	@extend %centered-text;
 	background-color: $primary-color;
 	margin-top: 340px;
@@ -17,11 +17,11 @@ body {
 
 h2 {
 	@extend %uppercase;
-	font-size: 1.6em;
+	font-size: $font-medium-size;
 	margin: 3em 0 4em;
 }
 h3 {
-		font-size: 1.4em;
+		font-size: $font-subtitle-size;
 }
 h4 {
 	@extend %uppercase;

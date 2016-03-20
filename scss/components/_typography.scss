@@ -3,12 +3,12 @@
 @include font-face('Open Sans', Open-Sans-700, 700, normal);
 
 article p {
-  font-size: .9em;
+  font-size: $font-small-size;
 }
 
 .hero p {
 	font-weight: 400;
-	font-size: 1.1em;
+	font-size: $font-base-size ;
 	line-height: 1.6em;
 	margin-top: 2em;
 
@@ -16,7 +16,7 @@ article p {
       text-align: left;
   }
   @include media(wide) {
-      font-size: 1.2em;
+      font-size: $font-hero-size;
   };
 
 }

@@ -1728,7 +1728,7 @@ h2, h4, .main-nav a, .unghia .btop {
 
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   background-color: #FAFAFA;
   margin-top: 340px;
   color: #4A4A4A; }
@@ -1740,11 +1740,11 @@ body {
       margin-top: 80px; } }
 
 h2 {
-  font-size: 1.6em;
+  font-size: 1.5em;
   margin: 3em 0 4em; }
 
 h3 {
-  font-size: 1.4em; }
+  font-size: 1.3em; }
 
 a {
   text-decoration: none;
@@ -1804,7 +1804,7 @@ header {
   .main-nav a {
     padding: 8px;
     background-color: #FFF;
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: 700; }
     @media (min-width: 768px) {
       .main-nav a {
@@ -1914,7 +1914,7 @@ footer {
       float: right;
       margin: 1em 0;
       text-transform: uppercase;
-      font-size: .9em;
+      font-size: 0.9em;
       font-weight: 700;
       color: #4A4A4A;
       display: inherit; } }
@@ -1942,11 +1942,11 @@ footer {
   src: url("../fonts/Open-Sans-700/Open-Sans-700.eot");
   src: url("../fonts/Open-Sans-700/Open-Sans-700.eot?#iefix") format("embedded-opentype"), url("../fonts/Open-Sans-700/Open-Sans-700.woff2") format("woff2"), url("../fonts/Open-Sans-700/Open-Sans-700.woff") format("woff"), url("../fonts/Open-Sans-700/Open-Sans-700.ttf") format("truetype"), url("../fonts/Open-Sans-700/Open-Sans-700.svg#OpenSans") format("svg"); }
 article p {
-  font-size: .9em; }
+  font-size: 0.9em; }
 
 .hero p {
   font-weight: 400;
-  font-size: 1.1em;
+  font-size: 16px;
   line-height: 1.6em;
   margin-top: 2em; }
   @media (min-width: 768px) {

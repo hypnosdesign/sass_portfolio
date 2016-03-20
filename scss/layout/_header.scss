@@ -15,7 +15,7 @@ header {
 
 .main {
 	&-title {
-		font-size: 2em;
+		font-size: $font-title-size;
 		font-weight: 700;
 		margin: 0;
 		padding:0;
@@ -54,7 +54,7 @@ header {
 			padding: 8px;
 			background-color: #FFF;
 			@extend %uppercase;
-			font-size: 1.1em;
+			font-size: $font-hero-size;
 			font-weight: 700;
 		}
 	}
