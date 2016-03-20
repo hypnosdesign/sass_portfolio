@@ -1,4 +1,43 @@
-REFACTORING
+WHO
+Mattia Piano
+@hypnosdesign
+
+
+
+TECHNOLOGY
+Html5, Css, Sass, JavaScript, jQuery
+
+
+
+JQUERY PLUGIN
+http://git.blivesta.com/animsition/ • ANIMSITION
+A SIMPLE AND EASY JQUERY PLUGIN FOR CSS ANIMATED PAGE TRANSITIONS.
+
+
+
+EDITOR
+https://atom.io/ • ATOM
+configuration
+  fontFamily: "Roboto Mono"
+  fontSize: 16
+  scrollPastEnd: true
+  showIndentGuide: true
+  softWrap: true
+plugins:
+  https://github.com/merrihew/atom-jade • ATOM JADE
+  http://emmet.io • EMMET
+  https://github.com/peterjohnhunt/emmet-snippets-compatibility • EMMET SNIPPETS COMPATIBILITY
+  https://github.com/DanBrooker/file-icons • FILE ICONS
+  https://atom.io/packages/minimap • MINIMAP
+  https://github.com/abe33/minimap-pigments • MINMAP PIGMENTS
+  https://github.com/abe33/atom-pigments • PIGMENTS
+  https://atom.io/packages/terminal-plus • TERMINAL PLUS
+
+
+
+NOTE
+
+CSS REFACTORING
 
 1. Dividere le relative sezioni in parziali
 2. Estrarre i pattern che si ripetono e creare delle estensioni

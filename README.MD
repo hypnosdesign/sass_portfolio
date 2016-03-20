@@ -86,3 +86,31 @@ For example:
   - Don’t worry about any warnings, we just need you to check any errors that might be there.
   - If CSS validator flags use of calc, or vendor prefixes these errors should be ignored.
   - If HTML validator flags use of pipe (‘|’) in Google font links/URLs this error can also be ignored.
+
+##Extra Credit
+To get an "exceeds" rating, you can expand on the project in the following ways:
+
+####**8 STEPS**
+
+1) **Create multiple subfolders (more than 3) for organizing styles.**
+
+***
+2) **Create multiple SCSS partial files (more than 3).**
+
+***
+3) **Multiple (more than 1)placeholder selectors**
+
+***
+4) **Multiple (more than 3) uses of @extends with placeholders**
+
+***
+5) **Multiple (more than 1) additional Sass variables (not just color, font-size, font-family).**
+
+***
+6) **Include at least 1 additional mixin for other code (not just for media queries)**
+
+***
+7) **Create more than 3 nested Sass rules where appropriate.**
+
+***
+8) **Using JavaScript or CSS/Sass, include an icon that, when clicked toggles the navigation on and off when on mobile screen sizes.**
