@@ -9,9 +9,14 @@ Html5, Css, Sass, JavaScript, jQuery, CodeKit
 
 
 
+FONT STACK
+http://www.localfont.com • LOCAL FONT
+http://chir.ag/projects/name-that-color/ • NAME THAT COLOR
+
+
+
 JQUERY PLUGIN
 http://git.blivesta.com/animsition/ • ANIMSITION
-A SIMPLE AND EASY JQUERY PLUGIN FOR CSS ANIMATED PAGE TRANSITIONS.
 
 
 
