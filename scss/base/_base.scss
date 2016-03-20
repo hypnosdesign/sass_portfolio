@@ -64,3 +64,31 @@ hr {
 .selected, a:hover {
 	color: #888;
 }
+
+/**************************
+	MAIN
+---------------------------
+***************************/
+
+main.portfolio {
+	background-color: #FFF;
+	padding: 2em 6%;
+}
+
+article {
+	margin-bottom: 3.5em;
+	position: relative;
+}
+
+/**************************
+	HERO
+---------------------------
+***************************/
+
+.hero {
+	padding: 0 6% 2em;
+}
+
+.img-profile {
+	width: 200px;
+}

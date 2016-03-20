@@ -1,0 +1,34 @@
+/**************************
+	HEADING
+---------------------------
+***************************/
+
+.main-title {
+	font-size: 2em;
+	font-weight: 700;
+	margin: 0;
+	padding:0;
+}
+
+/**************************
+	NAVIGATION
+---------------------------
+***************************/
+
+.main-nav {
+	display: block;
+	margin: 2em 0;
+	padding: 6%;
+}
+
+.main-nav li {
+	margin: 4px;
+}
+
+.main-nav a{
+	padding: 8px;
+	background-color: #FFF;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-weight: 700;
+}
