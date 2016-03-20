@@ -14,8 +14,12 @@ h2 {
 	margin: 3em 0 4em;
 }
 
+h4 {
+	@extend %uppercase;
+}
+
 img {
-	max-width: 100%;
+	@extend %makeresponsive;
 }
 
 a {

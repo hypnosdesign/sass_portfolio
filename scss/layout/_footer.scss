@@ -11,33 +11,38 @@ footer {
 	margin: 2em 0;
 	font-size: 1.2em;
 
-}
-.contact li {
-	margin: .8em 0;
+	& li {
+		margin: .8em 0;
+	}
+
+	& a {
+		display: inline-block;
+		font-weight: 700;
+		padding-left: 12px;
+	}
+	& span{
+		display: inline-block;
+	}
+
 }
 
-.contact a {
-	display: inline-block;
-	font-weight: 700;
-	padding-left: 12px;
-}
-.contact span{
-	display: inline-block;
-}
 
 .unghia {
 	@extend %clearfix;
+
+	& p {
+		float: left;
+		font-weight: 700;
+	}
+
+	& .btop {
+		float: right;
+		font-size: 0.9em;
+		@extend %uppercase;
+	}
 }
 
-.unghia p {
-	float: left;
-	font-weight: 700;
-}
 
-.unghia .btop {
-	float: right;
-	font-size: 0.9em;
-}
 
 .secondary-nav {
 	display: none;

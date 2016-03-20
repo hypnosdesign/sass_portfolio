@@ -2,6 +2,9 @@
 	EXTENDS
 ---------------------------
 ***************************/
+%makeresponsive {
+  max-width: 100%;
+}
 
 %centered-text {
   text-align: center;

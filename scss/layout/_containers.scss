@@ -1,6 +1,6 @@
 
 .wrapper {
-	max-width: 100%;
+	@extend %makeresponsive;
 	@extend %centered-container;
 }
 
@@ -29,11 +29,11 @@ article {
 
 
 main.portfolio {
+  @extend %centered-container;
   @extend %clearfix;
   background-color: #FFF;
   padding: 2em 6%;
   max-width: 90%;
-  @extend %centered-container;
   padding: 1em 1em 3em;
 }
 
