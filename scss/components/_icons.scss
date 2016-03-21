@@ -13,15 +13,15 @@
 }
 
 .icon-prj {
-  @include media(narrow){
-    position: absolute;
-    top:0px;
-    right:0px;
-  };
 	position: absolute;
 	top: -20px;
 	right: -20px;
 	z-index: 500;
 	border-radius: 0 0 0 25%;
 	background-color: #fff;
+  @include media(narrow) {
+    position: absolute;
+    top:0px;
+    right:0px;
+  };
 }

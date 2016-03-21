@@ -5,18 +5,13 @@ Mattia Piano
 
 
 TECHNOLOGY
-Html5, Css, Sass, JavaScript, jQuery, CodeKit
+Html5, Css, Sass, CodeKit
 
 
 
 FONT STACK
 http://www.localfont.com • LOCAL FONT
 http://chir.ag/projects/name-that-color/ • NAME THAT COLOR
-
-
-
-JQUERY PLUGIN
-http://git.blivesta.com/animsition/ • ANIMSITION
 
 
 

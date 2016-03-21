@@ -5,20 +5,19 @@ body {
 	font-size: $font-base-size;
 	@extend %centered-text;
 	background-color: $primary-color;
-	margin-top: 300px;
+	margin-top: 15em;
 	color: $text-color;
-	@include media(narrow) {
-			margin-top: 141px;
-	};
-	@include media(wide) {
-			margin-top: 80px;
-	};
+	@include media(narrow) { margin-top: 120px; };
+	@include media(wide) 	 { margin-top: 60px; };
 }
 
 h2 {
 	@extend %uppercase;
 	font-size: $font-medium-size;
-	margin: 3em 0 4em;
+	margin: 1em 0 2em;
+	@include media(narrow) {
+		font-size: $font-title-size;
+	};
 }
 h3 {
 		font-size: $font-subtitle-size;

@@ -7,10 +7,11 @@
 article {
 	margin-bottom: 3.5em;
 	position: relative;
-  float: left;
-  width: 50%;
   padding: .8em;
-
+	@include media(narrow) {
+		float: left;
+		width: 50%;
+	}
 	@include media(wide){
 		float: left;
 		width: 33%;
@@ -25,11 +26,8 @@ article {
 
 .hero {
   @extend %clearfix;
-	padding: 0 6% 2em;
-	@include media(narrow) {
-			padding: 4em 6%;
-			
-		};
+	padding: 0 6% 1em;
+	@include media(narrow) { padding: 4em 6%; };
 }
 
 .img-profile {

@@ -14,6 +14,7 @@ header {
 ***************************/
 
 .main {
+
 	&-title {
 		font-size: $font-title-size;
 		font-weight: 700;
@@ -27,8 +28,8 @@ header {
 	//NAVIGATION
 	&-nav {
 		display: block;
-		margin: 2em 0;
-		padding: 6%;
+		margin: 1em 0 0;
+		padding: 0 6%;
 		@include media(narrow) {
 			margin: 0;
 			padding: 1em 0;
@@ -36,7 +37,6 @@ header {
 		@include media(wide) {
 			float: right;
 		};
-		transition: all .3s ease-in-out;
 
 		& li {
 			@include media(narrow) {

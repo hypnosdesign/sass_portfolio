@@ -1,41 +1,35 @@
-@include media(narrow){
-  .btop {
-    display: none;
-  }
-}
-
 #button-toggler {
-  position: relative;
-  top: -230px;
+  position: fixed;
+  top: 38px;
+  left: 15px;
   z-index: 1000;
-  font-size: $font-title-size;
   padding: 0;
   margin: 0;
   line-height: 0;
-  font-size: $font-hero-size;
+  font-size: $font-hero-size + 0.5em;
   font-weight: 700;
-  @include media(narrow){
-      display: none;
+  cursor: pointer;
+  @include media(narrow) { display: none; };
+}
+
+#toggler { display: none;
+  //position: absolute;
+  //z-index: 1050;
   }
-}
-
-
-
-#toggler {
-  display: none;
-}
 
 :checked ~ header nav {
   display: none;
-  @include media(narrow){
-      display: block;
-  }
+  @include media(narrow) { display: block; }
 }
 
 :checked ~ .hero  {
-  margin-top: -220px;
+  margin-top: -10em;
   transition: all .3s ease-in-out;
-  @include media(narrow){
-      margin-top: inherit;
+  @include media(narrow) { margin-top: inherit; }
+}
+
+@include media(narrow) {
+  .btop {
+    display: none;
   }
 }

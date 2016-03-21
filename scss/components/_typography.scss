@@ -11,12 +11,6 @@ article p {
 	font-size: $font-base-size ;
 	line-height: 1.6em;
 	margin-top: 2em;
-
-  @include media(narrow) {
-      text-align: left;
-  }
-  @include media(wide) {
-      font-size: $font-hero-size;
-  };
-
+  @include media(narrow) { text-align: left; }
+  @include media(wide) { font-size: $font-hero-size; };
 }
