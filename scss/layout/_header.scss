@@ -36,6 +36,7 @@ header {
 		@include media(wide) {
 			float: right;
 		};
+		transition: all .3s ease-in-out;
 
 		& li {
 			@include media(narrow) {

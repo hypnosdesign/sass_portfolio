@@ -3,3 +3,39 @@
     display: none;
   }
 }
+
+#button-toggler {
+  position: relative;
+  top: -230px;
+  z-index: 1000;
+  font-size: $font-title-size;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+  font-size: $font-hero-size;
+  font-weight: 700;
+  @include media(narrow){
+      display: none;
+  }
+}
+
+
+
+#toggler {
+  display: none;
+}
+
+:checked ~ header nav {
+  display: none;
+  @include media(narrow){
+      display: block;
+  }
+}
+
+:checked ~ .hero  {
+  margin-top: -220px;
+  transition: all .3s ease-in-out;
+  @include media(narrow){
+      margin-top: inherit;
+  }
+}

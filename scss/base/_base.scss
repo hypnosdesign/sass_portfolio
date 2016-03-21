@@ -5,7 +5,7 @@ body {
 	font-size: $font-base-size;
 	@extend %centered-text;
 	background-color: $primary-color;
-	margin-top: 340px;
+	margin-top: 300px;
 	color: $text-color;
 	@include media(narrow) {
 			margin-top: 141px;
