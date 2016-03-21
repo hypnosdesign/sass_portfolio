@@ -113,4 +113,4 @@ To get an "exceeds" rating, you can expand on the project in the following ways:
 [x] 7) **Create more than 3 nested Sass rules where appropriate.**
 
 ***
-8) **Using JavaScript or CSS/Sass, include an icon that, when clicked toggles the navigation on and off when on mobile screen sizes.**
+[x] 8) **Using JavaScript or CSS/Sass, include an icon that, when clicked toggles the navigation on and off when on mobile screen sizes.**
